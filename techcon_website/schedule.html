@@ -1,0 +1,71 @@
+<!-- Create the Schedule page (schedule.html) for TechCon 2024, providing a detailed and accessible timetable of events, sessions, and speakers, using a structured HTML table format.
+
+Requirements:
+Header:
+
+Include a <header> tag containing the page title “Schedule for TechCon 2024” displayed within an <h1> tag.
+Implement a consistent navigation menu as in previous pages using a <nav> tag, linking to Home, About, Register, and Contact.
+Main Content:
+
+Utilize a <main> tag to centralize the primary content of the schedule.
+Construct a detailed schedule using a <table>:
+Headers: Use <th> tags for columns such as “Time”, “Session”, and “Speaker”, applying scope attributes to clarify their relevance.
+Data Rows: Populate with <td> tags containing the specifics of each session.
+Caption: Include a <caption> that succinctly describes the table (e.g., “Detailed Schedule of Events for TechCon 2024”). This should be one line of code for checker purposes.
+Footer:
+
+Use a <footer> tag consistent with the rest of the website.
+Include copyright information similar to other pages. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule for TechCon 2024</title>
+</head>
+<body>
+    <header>
+        <h1>Schedule for TechCon 2024</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table>
+            <caption>Detailed Schedule of Events for TechCon 2024</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Session</th>
+                    <th scope="col">Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Keynote Address</td>
+                    <td>Jane Doe</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM</td>
+                    <td>AI Innovations</td>
+                    <td>John Smith</td>
+                </tr>
+                <tr>
+                    <td>01:00 PM</td>
+                    <td>Cybersecurity Trends</td>
+                    <td>Emily Johnson</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
