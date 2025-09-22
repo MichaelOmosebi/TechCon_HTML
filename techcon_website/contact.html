@@ -1,0 +1,86 @@
+<!-- Develop the Contact page (contact.html) for TechCon 2024, featuring comprehensive contact details, interactive elements like an embedded map, and a “Contact Us” form, ensuring ease of communication for attendees.
+
+Updated Requirements:
+Header:
+
+Incorporate a <header> tag that includes the page title “Contact Us” within an <h1> tag.
+Feature the consistent navigation menu using a <nav> tag with links to Home, About, Schedule, and Register.
+Main Content:
+
+Use a <main> tag to house the primary content of the page.
+Detail contact information, including:
+Email Address: Display an official conference email using <a> tags configured with href="mailto:email@example.com" to facilitate direct emailing. (Use the example email given as is - don’t modify it)
+Social Media Links: List clickable icons or text linked to the conference’s social media profiles using <a> tags with href attributes pointing to the respective URLs and target="_blank" to open in new tabs.
+Embedded Google Maps: Location of the conference venue using an <iframe>. This map should be responsive and provide a clear view of the venue’s location.
+Contact Us Form:
+Include a form <form> that asks for the user’s name, email, and a message.
+Fields to include:
+Name: <input type="text"> with a corresponding <label>.
+Email: <input type="email"> with a corresponding <label>.
+Message: <textarea> with a corresponding <label>.
+Submit Button: <button type="submit"> labeled “Send Message”.
+Footer:
+
+Employ a <footer> tag that is consistent across all pages.
+Include copyright information, echoing the setup found on other pages. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <h2>Follow Us</h2>
+            <p>
+                <a href="https://twitter.com/TechCon" target="_blank">Twitter</a> |
+                <a href="https://facebook.com/TechCon" target="_blank">Facebook</a> |
+                <a href="https://linkedin.com/company/TechCon" target="_blank">LinkedIn</a>
+            </p>
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509098!2d144.9537353153165!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f5b5%3A0x5045675218ceed30!2sTechCon%202024!5e0!3m2!1sen!2sau!4v1616161616161!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <form action="submit_contact.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
